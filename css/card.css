@@ -34,7 +34,7 @@
 
 #new-numbers:hover {
     width: 400px;
-    background-color: lightgreen;
+    background-color: rgb(15, 222, 15);
     transition: 1s;
 }
 
