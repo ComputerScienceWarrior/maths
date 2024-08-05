@@ -1,0 +1,27 @@
+nav {
+    text-align: center;
+    background-color: rgb(65, 65, 151);
+    width: 'full';
+}
+
+nav, ul {
+    display: flex;
+    justify-content:space-between;
+    
+    list-style-type: none;
+}
+
+/* THESE ARE THE OPERAND SIGNS (+ , - , x ,  /) */
+ul, li {
+    min-width: fit-content;
+    width: 100%;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+ul, li:hover {
+    color: green;
+    transition: 1s;
+}

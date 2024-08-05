@@ -13,4 +13,3 @@ const newNumbers = document.getElementById('new-numbers');
 newNumbers.addEventListener('click', () =>{
     getNums('+');
 });
-
