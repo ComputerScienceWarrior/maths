@@ -1,15 +1,25 @@
-document.getElementById('card').innerText = '1 + 1';
+import { getNums, gameLoop } from './utils.js'
 
-const getNums = (sign) => {
-    let randomNumber1 = Math.round(Math.random() * 10);
-    let randomNumber2 = Math.round(Math.random() * 10);
-    let card = document.getElementById('card');
-    
-    card.innerText = `${randomNumber1} ${sign} ${randomNumber2}`;
-};
+const addition = document.getElementById('addition-operator');
+const subtraction = document.getElementById('subtraction-operator');
+const multiplication = document.getElementById('multiplication-operator');
+const division = document.getElementById('division-operator');
 
-const newNumbers = document.getElementById('new-numbers');
-
-newNumbers.addEventListener('click', () =>{
-    getNums('+');
+addition.addEventListener('click', () => {
+    getNums(addition.innerText);
 });
+
+subtraction.addEventListener('click', () => {
+    getNums(subtraction.innerText);
+});
+
+
+multiplication.addEventListener('click', () => {
+    getNums(multiplication.innerText);
+});
+
+division.addEventListener('click', () => {
+    getNums(division.innerText);
+});
+
+gameLoop();
