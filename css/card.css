@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: '10px'
-
 }
 
 #card {
@@ -15,6 +13,31 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background-color: red;
+    background-color: rgb(140, 78, 78);
     font-size: 72px;
+    margin: 50px 0;
+}
+
+#new-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#new-numbers:hover {
+    width: 400px;
+    background-color: lightgreen;
+    transition: 1s;
+}
+
+#new-numbers, img {
+    padding-left: 30px;
 }
