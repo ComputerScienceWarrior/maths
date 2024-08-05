@@ -1,7 +1,19 @@
 nav {
     text-align: center;
+    background-color: rgb(65, 65, 151);
 }
 
 nav, ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
+}
+
+ul, li {
+    margin: 10px 180px 10px 180px;
+    min-width: fit-content;
+}
+
+ul, li, button {
+    width: 50px;
 }
