@@ -1,25 +1,34 @@
-import { getNums, gameLoop } from './utils.js'
+import { getNums } from './utils.js'
 
 const addition = document.getElementById('addition-operator');
 const subtraction = document.getElementById('subtraction-operator');
 const multiplication = document.getElementById('multiplication-operator');
 const division = document.getElementById('division-operator');
+const newNumbers = document.getElementById('new-numbers');
+let currentSign;
+
+document.getElementById('card').innerText = '1 + 1';
+
+newNumbers.addEventListener('click', () =>{
+    getNums(currentSign ? currentSign : '+');
+});
 
 addition.addEventListener('click', () => {
-    getNums(addition.innerText);
+    currentSign = addition.innerText;
+    getNums(currentSign);
 });
 
 subtraction.addEventListener('click', () => {
-    getNums(subtraction.innerText);
+    currentSign = subtraction.innerText;
+    getNums(currentSign);
 });
 
-
 multiplication.addEventListener('click', () => {
-    getNums(multiplication.innerText);
+    currentSign = multiplication.innerText;
+    getNums(currentSign);
 });
 
 division.addEventListener('click', () => {
-    getNums(division.innerText);
+    currentSign = division.innerText;
+    getNums(currentSign);
 });
-
-gameLoop();
